@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace DemoCustomTabControl
 {
-    public partial class Form1 : Form
+    public partial class ChildrentForm : Form
     {
-        public Form1()
+        public ChildrentForm()
         {
             InitializeComponent();
+        }
+
+        public ChildrentForm(string titleForm)
+        {
+            InitializeComponent();
+            label1.Text = titleForm;
+        }
+
+        private void ChildrentForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
